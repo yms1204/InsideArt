@@ -1,0 +1,175 @@
+/* https://colorhunt.co/palette/9195f6b7c9f2f9f07afb88b4 */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+}
+.artwork-page {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  /* justify-content: space-between; */
+  justify-content: center; /* 가로 방향으로 가운데 정렬 */
+  align-items: center; /* 세로 방향으로 가운데 정렬 */
+  /* height: 100vh;  */
+  padding: 20px;
+}
+
+.artwork-detail {
+  /* flex: 1; */
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.artwork-page-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 700px; /* 아트워크 이미지의 최대 높이 설정 */
+}
+
+.chat-section {
+  flex: 2;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  height: 800px; /* 채팅 섹션의 최대 높이 설정 */
+  max-height: 800px; /* 채팅 섹션의 최대 높이 설정 */
+  position: relative; /* 상대적 위치 설정 */
+  border-radius: 30px;
+  /* overflow-y: auto; */
+}
+
+.chat-selection {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  position: sticky;
+  top: 0;
+  background-color: #9195f6; /* 배경색을 고정하여 스크롤 시 겹치지 않도록 */
+
+  z-index: 1; /* 다른 요소 위에 표시 */
+  /* font */
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-container {
+  max-height: 715px;
+  height: 715px;
+  overflow-y: auto;
+  background-color: #dde5f9;
+  width: 500px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.messages {
+  flex: 1;
+  margin-top: 10px;
+  overflow-y: auto; /* 채팅 메시지가 많을 때 스크롤 가능하도록 설정 */
+  padding-top: 10px;
+}
+
+.message {
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.message.query {
+  text-align: left;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  width: fit-content;
+  background-color: #9195f6;
+  color: white;
+}
+
+.message.response {
+  text-align: left;
+  /* border: 1px solid black; */
+  width: fit-content;
+  background-color: #ffffff;
+}
+
+.no-interest-button {
+  /* position: absolute;
+  bottom: 5px;
+  right: 10px; */
+  margin-top: 5px;
+  background-color: #bfc1e5;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.no-interest-button:hover {
+  background-color: #aaabc8;
+}
+
+/* */
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: sticky;
+  bottom: 0;
+  background-color: white; /* 배경색 고정 */
+}
+
+.chat-input-container input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+.chat-input-container button {
+  background-color: #fb88b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-input-container button:hover {
+  background-color: #e77da6;
+}
+
+.chat-input-container button:focus {
+  outline: none;
+}

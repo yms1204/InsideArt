@@ -1,0 +1,77 @@
+body {
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* 검색창 스타일 */
+.header input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px; /* 폰트 크기를 키워서 더 눈에 띄게 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.header button {
+  background-color: #4caf50; /* 버튼 색상 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header button:hover {
+  background-color: #45a049; /* 마우스 오버 시 버튼 색상 */
+}
+
+.artworks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.artwork-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.artwork-name {
+  display: block;
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.artwork-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.artwork-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.new-artwork {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-artwork input,
+.new-artwork textarea {
+  margin-bottom: 10px;
+}
